@@ -1,3 +1,3 @@
 <Solution>
-  <Project Path="BPol.Api/BPol.Api.csproj" />
+  <Project Path="./BPol.Api/BPol.Api.csproj" />
 </Solution>
