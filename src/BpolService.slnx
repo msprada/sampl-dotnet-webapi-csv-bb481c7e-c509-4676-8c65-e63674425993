@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="./BPol.Api/BPol.Api.csproj" />
+  <Project Path="Shared.Web/Shared.Web.csproj" />
 </Solution>
