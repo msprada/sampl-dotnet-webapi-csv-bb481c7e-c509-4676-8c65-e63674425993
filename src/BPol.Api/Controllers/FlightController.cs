@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BPol.Api.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BPol.Api.Controllers;
 
@@ -9,6 +10,7 @@ public class FlightsController : Controller
 {
 
     [HttpGet]
+    // [Authorize]
     public IEnumerable<FlightDataItem> Index()
     {
         var flights = new List<FlightDataItem>

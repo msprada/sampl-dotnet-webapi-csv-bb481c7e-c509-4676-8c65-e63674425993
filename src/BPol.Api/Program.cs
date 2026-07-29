@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using Shared.Web;
+using Shared.Web.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers(option =>
     
 });
 
+builder.Services.AddFDGAuthentication(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -25,10 +27,6 @@ if (app.Environment.IsDevelopment())
 app.UseCorrelationId();
 
 app.UseHttpsRedirection();
-
-
-app.UseAuthorization();
-
 
 app.MapControllers();
 
