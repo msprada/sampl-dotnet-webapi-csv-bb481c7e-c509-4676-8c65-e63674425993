@@ -9,7 +9,7 @@ namespace Shared.Web.Authentication
         public const string SectionName = "OauthProviderOptions";
 
         [Required]
-        public  string Instance {get; set;} = string.Empty;
+        public string Instance { get; set; } = string.Empty;
 
         [Required]
         public string TenantId { get; init; } = string.Empty;

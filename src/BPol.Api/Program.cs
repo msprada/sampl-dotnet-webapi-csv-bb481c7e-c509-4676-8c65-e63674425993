@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers(option =>
 {
     option.OutputFormatters.Add(new BPol.Api.Formatters.CsvOutputFormatter());
-    
+
 });
 
 builder.Services.AddFDGAuthentication(builder.Configuration);

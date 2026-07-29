@@ -1,12 +1,12 @@
 namespace Shared.Web.Authentication
 {
 
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.AspNetCore.Authentication.JwtBearer;
-    using Microsoft.Identity.Web;
-    using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.Options;
+    using Microsoft.Identity.Web;
 
     public static class AuthenticationExtensions
     {

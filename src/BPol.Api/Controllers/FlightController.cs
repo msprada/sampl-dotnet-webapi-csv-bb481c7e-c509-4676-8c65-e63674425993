@@ -1,7 +1,7 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using BPol.Api.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BPol.Api.Controllers;
 

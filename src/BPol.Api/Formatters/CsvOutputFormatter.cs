@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc.Formatters;
 using System.Text;
 using BPol.Api.Models;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace BPol.Api.Formatters
 {
