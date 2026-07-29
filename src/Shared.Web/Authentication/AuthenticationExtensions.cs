@@ -23,8 +23,7 @@ namespace Shared.Web.Authentication
 
             services
                 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApi(configuration.GetSection(OAuthProviderOptions.SectionName)
-                );
+                .AddMicrosoftIdentityWebApi(configuration.GetSection(OAuthProviderOptions.SectionName));
 
             services.AddAuthorization();
 
